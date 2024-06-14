@@ -10,11 +10,11 @@ namespace GymnastiksalsSystemet
     internal class Gruppe
     {
         public string GroupName { get; set; }
-        public int AgeGroup { get; set; }
+        public string AgeGroup { get; set; }
         public int Number { get; set; }
         public int Id { get; set; }
 
-        public Gruppe(string GroupName, int AgeGroup, int Number, int Id ) 
+        public Gruppe(string GroupName, string AgeGroup, int Number, int Id ) 
         {
             this.GroupName = GroupName;
             this.AgeGroup = AgeGroup;

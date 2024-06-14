@@ -7,12 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="BookingManager" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="BookingManager" />
-  </ItemGroup>
-
 </Project>

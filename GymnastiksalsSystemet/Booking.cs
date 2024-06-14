@@ -8,25 +8,24 @@ namespace GymnastiksalsSystemet
 {
     internal class Booking
     {
-        DateTime Date { get; set; }
-        DateTime Start {  get; set; }
-        DateTime End { get; set; }
-        private int HallId { get; set; }
-        private int Id { get; set; }
+        public DateTime Date { get; private set; }
+        public DateTime Start {  get; private set; }
+        public DateTime End { get; private set; }
+        public int HallId { get; set; }
+        public int GruppeId { get; private set; }
 
         
-        public Booking(int hallId, int id)
+        
+        public Booking(int hallId, int gruppeId, DateTime date, DateTime start, DateTime end)
         {
             HallId = hallId;
-            Id = id;
-            Date = DateTime.Now;
-            Start = DateTime.Now;
-            End = DateTime.Now;
+            GruppeId = gruppeId;
+            Date = date;
+            Start = start;
+            End = end;
+            
         }
 
-        public override string ToString()
-        {
-            return "Dato for resevation" + Date.ToString("dd:MM:yy") + "Tidspunkt for booking" + Start("HH");
-        }
+        
     }
 }
